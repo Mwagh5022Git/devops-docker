@@ -55,7 +55,7 @@ Create Repository
 EOF
 
 # 🔹 Step 2: Connect Ubuntu project to GitHub
-cd ~/devops-linux
+#cd ~/devops-linux
 git init
 git branch -M main
 git remote add origin https://github.com/Mwagh5022/REPO.git
@@ -64,3 +64,10 @@ git remote add origin https://github.com/Mwagh5022/REPO.git
 git add .
 git commit -m "Initial commit"
 git push -u origin main
+
+git push docker.sh
+git status
+git add docker.sh
+git commit -m "Added docker.sh script"
+git remote -v
+git push origin main
