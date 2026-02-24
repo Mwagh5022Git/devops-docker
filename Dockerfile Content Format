@@ -1,0 +1,23 @@
+A Dockerfile is a text file that contains instructions to build a Docker image step-by-step.
+It always follows a top → bottom execution order.
+Basic Dockerfile Structure
+ # 1. Base Image
+    FROM image_name:tag
+
+# 2. Maintainer info (optional)
+    LABEL maintainer="yourname"
+
+# 3. Set Working Directory
+    WORKDIR /app
+
+# 4. Copy files
+    COPY . .
+
+# 5. Install dependencies
+    RUN command
+
+# 6. Expose port
+    EXPOSE port_number
+
+# 7. Default command to run
+    CMD ["executable", "arg"]
