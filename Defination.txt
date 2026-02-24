@@ -1,0 +1,28 @@
+A Dockerfile is a set of ordered instructions like FROM, WORKDIR, COPY, RUN, EXPOSE, and CMD used to build a Docker image.
+GitLab
+    GitLab is a complete DevOps platform.
+    It includes repo + CI/CD + security + monitoring in one tool.
+    Everything is built-in.
+    👉 Example: You can push code → build → test → deploy → monitor all inside GitLab.
+
+GitHub Actions
+    GitHub Actions is only a CI/CD automation tool inside GitHub.
+    It is mainly used to automate workflows like build, test, deploy.
+    👉 Example: When code is pushed → run pipeline → deploy to AWS.
+
+✅ Main Difference (Simple Line)
+    👉 GitLab = Full DevOps Platform
+    👉 GitHub Actions = CI/CD Automation Tool
+
+CI/CD Working Difference
+    🔹 GitLab CI/CD
+        Uses file: .gitlab-ci.yml
+        Has built-in pipeline stages:
+            build → test → deploy
+        Runners execute jobs.
+    🔹 GitHub Actions
+        Uses file: .github/workflows/main.yml
+        Works on events like:
+            push, pull_request, schedul
+GitLab is a complete DevOps lifecycle platform, whereas GitHub Actions is a CI/CD automation service used inside GitHub to build, test, and deploy code.
+
